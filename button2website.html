@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .fancy-button {
+            background-color: #d60f0f; /* Button color */
+            color: rgb(255, 255, 255); /* Text color */
+            padding: 15px 30px; /* Padding */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            font-size: 16px; /* Font size */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background 0.3s, transform 0.2s; /* Transition effects */
+        }
+        .fancy-button:hover {
+            background-color: #2988ee; /* Darker shade on hover */
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+    </style>
+</head>
+<body>
+    <button class="fancy-button" id="myButton">أضغت هنا لفتح الطتبيق</button>
+
+    <script>
+        document.getElementById('myButton').onclick = function() {
+            window.open('http://127.0.0.1:5500/subject.html'); // Change the URL to your desired link
+        };
+    </script>
+</body>
+</html>
